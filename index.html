@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nyāya Knowledge Validation Framework</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@500;600;700&family=JetBrains+Mono:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+
+    <div class="container">
+
+        <a class="navbar-brand" href="#">
+            <span class="brand-seal"><i class="bi bi-brain"></i></span>
+            <span class="brand-text">
+                Nyāya Validator
+                <small>Indian Knowledge Systems</small>
+            </span>
+        </a>
+
+        <button class="btn"
+            id="themeBtn"
+            onclick="toggleTheme()">
+
+            🌙 Dark Mode
+
+        </button>
+
+    </div>
+
+</nav>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+    <div class="yantra" aria-hidden="true">
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <div class="petals"></div>
+    </div>
+
+    <div class="container">
+
+        <span class="eyebrow">
+            Indian Knowledge Systems
+        </span>
+
+        <h1>
+            <span class="devanagari">न्याय</span>
+            Nyāya Knowledge Validation Framework
+        </h1>
+
+        <p class="lead mt-3">
+            Test any claim against the four classical Nyāya Pramāṇas —
+            direct observation, inference, comparison, and authoritative testimony.
+        </p>
+
+        <div class="rule"></div>
+
+        <div class="pramana-strip">
+
+            <div class="pramana-chip">
+                <i class="bi bi-eye-fill"></i>
+                <div>
+                    <div class="p-title">Pratyakṣa</div>
+                    <div class="p-sub">Observation</div>
+                </div>
+            </div>
+
+            <div class="pramana-chip">
+                <i class="bi bi-lightbulb-fill"></i>
+                <div>
+                    <div class="p-title">Anumāna</div>
+                    <div class="p-sub">Inference</div>
+                </div>
+            </div>
+
+            <div class="pramana-chip">
+                <i class="bi bi-arrow-left-right"></i>
+                <div>
+                    <div class="p-title">Upamāna</div>
+                    <div class="p-sub">Comparison</div>
+                </div>
+            </div>
+
+            <div class="pramana-chip">
+                <i class="bi bi-journal-text"></i>
+                <div>
+                    <div class="p-title">Śabda</div>
+                    <div class="p-sub">Testimony</div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= DASHBOARD ================= -->
+
+<div class="container mb-4">
+
+    <div class="row g-4">
+
+        <div class="col-lg-4">
+
+            <div class="card dashboard-card border-0">
+
+                <div class="card-body text-center">
+
+                    <span class="icon-ring"><i class="bi bi-search"></i></span>
+
+                    <h5>Total Searches</h5>
+
+                    <h1 id="totalSearches">0</h1>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-lg-4">
+
+            <div class="card dashboard-card border-0">
+
+                <div class="card-body text-center">
+
+                    <span class="icon-ring"><i class="bi bi-check-circle-fill"></i></span>
+
+                    <h5>Valid</h5>
+
+                    <h1 id="validCount">0</h1>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-lg-4">
+
+            <div class="card dashboard-card border-0">
+
+                <div class="card-body text-center">
+
+                    <span class="icon-ring"><i class="bi bi-x-circle-fill"></i></span>
+
+                    <h5>Invalid</h5>
+
+                    <h1 id="invalidCount">0</h1>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ================= PRAMANA DETAIL ================= -->
+
+<div class="container mb-5">
+
+    <div class="text-center mb-5">
+        <span class="eyebrow">The Four Pramāṇas</span>
+        <h2 class="section-title mt-3">How the Nyāya School Tests Knowledge</h2>
+        <p class="section-lead">
+            Nyāya, one of the six classical schools of Indian philosophy, holds that a belief
+            only counts as genuine knowledge (<em>pramā</em>) when it is reached through a
+            reliable means of knowing (<em>pramāṇa</em>). Every statement in this validator is
+            checked against all four.
+        </p>
+    </div>
+
+    <div class="row g-4">
+
+        <div class="col-lg-3 col-md-6">
+            <div class="card pramana-card border-0 h-100">
+                <div class="card-body">
+                    <div class="pramana-number">01</div>
+                    <i class="bi bi-eye-fill"></i>
+                    <h4>Pratyakṣa</h4>
+                    <div class="pramana-eng">Direct Observation</div>
+                    <p>
+                        Knowledge gained through direct contact between a sense organ and its
+                        object — seeing, hearing, touching, tasting, or smelling something
+                        yourself. Nyāya treats this as the most immediate and foundational
+                        pramāṇa, since it requires no intermediate reasoning.
+                    </p>
+                    <div class="pramana-example">
+                        e.g. Knowing fire is hot because you felt its warmth.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+            <div class="card pramana-card border-0 h-100">
+                <div class="card-body">
+                    <div class="pramana-number">02</div>
+                    <i class="bi bi-lightbulb-fill"></i>
+                    <h4>Anumāna</h4>
+                    <div class="pramana-eng">Inference</div>
+                    <p>
+                        Knowledge derived by reasoning from something already known to something
+                        not directly perceived, based on an invariable relationship
+                        (<em>vyāpti</em>) between the two. Classic Nyāya logic runs through a
+                        five-step syllogism to reach a valid conclusion.
+                    </p>
+                    <div class="pramana-example">
+                        e.g. Inferring fire on a hill from seeing smoke rising above it.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+            <div class="card pramana-card border-0 h-100">
+                <div class="card-body">
+                    <div class="pramana-number">03</div>
+                    <i class="bi bi-arrow-left-right"></i>
+                    <h4>Upamāna</h4>
+                    <div class="pramana-eng">Comparison &amp; Analogy</div>
+                    <p>
+                        Knowledge of a new object gained by understanding its similarity to
+                        something already familiar. It explains how a description or analogy lets
+                        someone recognize a thing correctly the first time they encounter it.
+                    </p>
+                    <div class="pramana-example">
+                        e.g. Recognizing a wild ox after being told it "looks like a cow."
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+            <div class="card pramana-card border-0 h-100">
+                <div class="card-body">
+                    <div class="pramana-number">04</div>
+                    <i class="bi bi-journal-text"></i>
+                    <h4>Śabda</h4>
+                    <div class="pramana-eng">Authoritative Testimony</div>
+                    <p>
+                        Knowledge received from the trustworthy word of a reliable source —
+                        a competent expert, a credible witness, or a recognized authoritative
+                        text. Validity here rests entirely on the reliability of the speaker or
+                        source, not on independent verification.
+                    </p>
+                    <div class="pramana-example">
+                        e.g. Accepting a scientific fact stated in a peer-reviewed textbook.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ================= VALIDATOR ================= -->
+
+<div class="container mb-5">
+
+    <div class="card validator-card border-0">
+
+        <div class="card-body p-5">
+
+            <h2 class="text-center mb-3">
+                <i class="bi bi-patch-check-fill"></i>
+                Validate Knowledge Statement
+            </h2>
+
+            <p class="text-center subtext">
+                Enter a statement and validate it using the four Nyāya Pramāṇas.
+            </p>
+
+            <div class="mb-4 mt-4">
+
+                <input
+                    type="text"
+                    id="claim"
+                    class="form-control form-control-lg"
+                    list="suggestions"
+                    placeholder="Example: Earth revolves around the Sun"
+                    readonly>
+                <datalist id="suggestions"></datalist>
+
+            </div>
+
+            <div class="row g-3">
+
+                <div class="col-lg-3 col-md-6">
+                    <button class="btn btn-primary w-100 btn-lg" onclick="validateClaim()">
+                        <i class="bi bi-search"></i>
+                        Validate
+                    </button>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <button class="btn btn-warning w-100 btn-lg" onclick="clearData()">
+                        <i class="bi bi-arrow-clockwise"></i>
+                        Reset
+                    </button>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <button class="btn btn-success w-100 btn-lg" onclick="setRandomSample()">
+                        <i class="bi bi-shuffle"></i>
+                        Random Sample
+                    </button>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <button class="btn btn-info w-100 btn-lg" onclick="showSamples()">
+                        <i class="bi bi-book-half"></i>
+                        Samples
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ================= RESULT ================= -->
+
+<div class="container mb-5">
+
+    <div id="result"></div>
+
+</div>
+
+<!-- ================= HISTORY + SAMPLE ================= -->
+
+<div class="container mb-5">
+
+<div class="row g-4">
+
+<div class="col-lg-6">
+
+<div class="card panel-card border-0 h-100">
+
+<div class="card-header">
+    <h4><i class="bi bi-clock-history"></i> Recent Validation History</h4>
+</div>
+
+<div class="card-body">
+
+<ul id="historyList" class="list-group list-group-flush"></ul>
+
+<div class="text-center mt-4">
+    <button class="btn btn-danger" onclick="clearHistory()">
+        <i class="bi bi-trash"></i>
+        Clear History
+    </button>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-lg-6">
+
+<div class="card panel-card border-0 h-100" id="sampleBox" style="display:none;">
+
+<div class="card-header">
+    <h4><i class="bi bi-book"></i> Sample Statements</h4>
+</div>
+
+<div class="card-body">
+
+<p>Click on any statement to automatically fill the input box.</p>
+
+<div id="sampleList" class="d-grid gap-2"></div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-6 card-header">
+
+                <h4>
+                    <i class="bi bi-brain"></i>
+                    Nyāya Knowledge Validation Framework
+                </h4>
+
+                <p>
+                    Validate knowledge using the four Nyāya Pramāṇas.
+                </p>
+
+            </div>
+
+            <div class="col-lg-6 text-lg-end">
+
+                <h5>Indian Knowledge Systems (IKS)</h5>
+
+                <p>Developed using HTML, CSS, JavaScript &amp; Bootstrap 5</p>
+
+                <small>© 2026 All Rights Reserved</small>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<!-- Bootstrap JS -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="database.js"></script>
+<script src="script.js"></script>
+
+</body>
+
+</html>
