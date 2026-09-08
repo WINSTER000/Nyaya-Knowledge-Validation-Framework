@@ -96,7 +96,7 @@ Bootstrap 5 is used for responsive layouts, cards, buttons, forms, and other int
 
 ### 🏛️ Main Dashboard
 
-![Nyāya Knowledge Validation Framework](Uploading 1786039805189.jpg…)
+![Nyāya Knowledge Validation Framework](<img width="1904" height="1077" alt="image" src="https://github.com/user-attachments/assets/1004ae14-68d9-4f48-9846-3835d065a3b4" />)
 
 The main interface introduces the framework, presents the four Pramāṇas, displays validation statistics, and provides access to the knowledge validator.
 
