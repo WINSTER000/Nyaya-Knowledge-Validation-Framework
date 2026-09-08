@@ -102,13 +102,13 @@ The main interface introduces the framework, presents the four Pramāṇas, disp
 
 ### 🔎 Knowledge Validator
 
-![Knowledge Validator](screenshots/validator.jpg)
+<img width="1368" height="386" alt="image" src="https://github.com/user-attachments/assets/e20eb143-fca8-40af-9f2b-baaa9ceeaf4f" />
 
 Users can select a statement and validate it through the four Nyāya Pramāṇas. The interface also provides reset, random sample, and sample-selection controls. fileciteturn1file2L282-L348
 
 ### 📋 Validation Report
 
-![Nyāya Validation Report](screenshots/validation-report.jpg)
+<img width="1387" height="635" alt="image" src="https://github.com/user-attachments/assets/2a24f44f-1bd3-4e43-9fd6-037e4e72d0c5" />
 
 Each matched statement produces a structured report containing:
 - The original statement
@@ -123,13 +123,13 @@ Each matched statement produces a structured report containing:
 
 ### 🕘 Recent Validation History
 
-![Validation History](screenshots/validation-history.jpg)
+<img width="703" height="395" alt="image" src="https://github.com/user-attachments/assets/5e1ab4cb-dcfc-418b-8447-a78bd46afac9" />
 
 The history panel keeps track of recent validations and their verdicts using browser Local Storage. fileciteturn1file0L40-L69
 
 ### 📚 Sample Statements
 
-![Sample Statements](screenshots/sample-statements.jpg)
+<img width="655" height="613" alt="image" src="https://github.com/user-attachments/assets/38543107-9465-4465-a8cc-900e51a6c7b5" />
 
 Sample statements provide a quick way to explore the validation system without manually entering a statement.
 
