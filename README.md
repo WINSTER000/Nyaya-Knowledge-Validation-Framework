@@ -56,7 +56,7 @@ Every matched statement is presented with an explanation for each of these four 
   - ❌ **INVALID**
 - Show a clear **Knowledge Not Found** result when a statement is unavailable.
 
-The validation process searches the predefined knowledge base and generates the report from the matched record. fileciteturn1file4L546-L589
+The validation process searches the predefined knowledge base and generates the report from the matched record.
 
 ### 📊 Validation Dashboard
 The application tracks:
@@ -64,7 +64,7 @@ The application tracks:
 - Valid results
 - Invalid results
 
-These dashboard values are derived from the stored validation history. fileciteturn1file3L478-L530
+These dashboard values are derived from the stored validation history.
 
 ### 📜 Validation History
 - Stores recent validation results in browser Local Storage.
@@ -72,23 +72,19 @@ These dashboard values are derived from the stored validation history. fileci
 - Keeps the latest 10 validation records.
 - Allows users to clear their history.
 
-fileciteturn1file4L705-L744
-
 ### 📚 Sample Statements
 Users can open a collection of predefined sample statements and select one to automatically populate the validator.
 
-fileciteturn1file0L71-L89
-
 ### 🎲 Random Samples
-A random sample can be selected for quick experimentation without manually choosing a statement. fileciteturn1file0L9-L20
+A random sample can be selected for quick experimentation without manually choosing a statement.
 
 ### 🌗 Theme Support
 The interface includes a dark-mode-first visual design with a parchment-inspired light mode.
 
-The visual system uses deep indigo backgrounds, gold accents, vermilion highlights, sage tones, and typography based on Cormorant Garamond, Poppins, and JetBrains Mono. fileciteturn1file7L977-L1007
+The visual system uses deep indigo backgrounds, gold accents, vermilion highlights, sage tones, and typography based on Cormorant Garamond, Poppins, and JetBrains Mono. 
 
 ### 📱 Responsive Interface
-Bootstrap 5 is used for responsive layouts, cards, buttons, forms, and other interface components. fileciteturn1file1L151-L173
+Bootstrap 5 is used for responsive layouts, cards, buttons, forms, and other interface components.
 
 ---
 
@@ -104,7 +100,7 @@ The main interface introduces the framework, presents the four Pramāṇas, disp
 
 <img width="1368" height="386" alt="image" src="https://github.com/user-attachments/assets/e20eb143-fca8-40af-9f2b-baaa9ceeaf4f" />
 
-Users can select a statement and validate it through the four Nyāya Pramāṇas. The interface also provides reset, random sample, and sample-selection controls. fileciteturn1file2L282-L348
+Users can select a statement and validate it through the four Nyāya Pramāṇas. The interface also provides reset, random sample, and sample-selection controls. 
 
 ### 📋 Validation Report
 
@@ -119,13 +115,11 @@ Each matched statement produces a structured report containing:
 - Confidence score
 - Final verdict
 
-fileciteturn1file4L601-L691
-
 ### 🕘 Recent Validation History
 
 <img width="703" height="395" alt="image" src="https://github.com/user-attachments/assets/5e1ab4cb-dcfc-418b-8447-a78bd46afac9" />
 
-The history panel keeps track of recent validations and their verdicts using browser Local Storage. fileciteturn1file0L40-L69
+The history panel keeps track of recent validations and their verdicts using browser Local Storage.
 
 ### 📚 Sample Statements
 
@@ -147,7 +141,7 @@ Sample statements provide a quick way to explore the validation system without m
 | **Google Fonts** | Cormorant Garamond, Poppins, and JetBrains Mono |
 | **Local Storage API** | Persistent client-side validation history |
 
-The project loads Bootstrap 5.3.7, Bootstrap Icons, Google Fonts, the custom stylesheet, `database.js`, and `script.js`. fileciteturn1file1L151-L173 fileciteturn1file0L132-L137
+The project loads Bootstrap 5.3.7, Bootstrap Icons, Google Fonts, the custom stylesheet, `database.js`, and `script.js`.
 
 ---
 
@@ -210,7 +204,7 @@ When validation is triggered:
 6. The corresponding verdict is displayed.
 7. The validation record is saved to browser Local Storage.
 
-The matching process uses the statement stored in the knowledge base and checks whether the selected input is contained within the stored statement. fileciteturn1file4L546-L557
+The matching process uses the statement stored in the knowledge base and checks whether the selected input is contained within the stored statement. 
 
 ---
 
@@ -228,9 +222,7 @@ This means:
 - History is specific to the browser/device.
 - Clearing browser storage can remove the saved history.
 - The application keeps a maximum of 10 recent records.
-
-fileciteturn1file4L705-L717
-
+  
 ---
 
 ## 📁 Project Structure
@@ -256,12 +248,12 @@ Nyaya-Knowledge-Validation-Framework/
 
 **`index.html`**
 - Defines the application structure.
-- Contains the navigation, hero section, Pramāṇa cards, dashboard, validator, result area, history, samples, and footer. fileciteturn1file1L179-L203 fileciteturn1file0L40-L130
+- Contains the navigation, hero section, Pramāṇa cards, dashboard, validator, result area, history, samples, and footer.
 
 **`style.css`**
 - Controls the complete visual design.
 - Provides dark/light themes.
-- Defines colors, typography, cards, buttons, layouts, animations, and responsive styling. fileciteturn1file7L977-L1007
+- Defines colors, typography, cards, buttons, layouts, animations, and responsive styling.
 
 **`database.js`**
 - Contains the predefined knowledge base used by the validation system.
@@ -271,7 +263,7 @@ Nyaya-Knowledge-Validation-Framework/
 - Generates validation reports.
 - Manages Local Storage history.
 - Updates dashboard statistics.
-- Handles samples, random selection, and interactive behavior. fileciteturn1file4L546-L557 fileciteturn1file4L705-L744
+- Handles samples, random selection, and interactive behavior.
 
 ---
 
